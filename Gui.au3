@@ -255,7 +255,8 @@ ElseIf $msg = $hExecutionButton Then
 	   $sItems =  $aItems[$iI]
 	   Dim $AutoItExe =  @ScriptDir & '\'& $sItems &'.exe'
 
-	   Dim $result = RunAs("bharathraj.vm","BRILLIO.COM","meaning@123$",0,$AutoItExe)
+	   dim $result = Run($AutoItExe)
+	   ;Dim $result = RunAs("bharathraj.vm","BRILLIO.COM","meaning@123$",0,$AutoItExe)
 	  ProcessWaitClose($result)
    Next
 EndIf
